@@ -32,3 +32,26 @@ body {
   background-image: linear-gradient(to bottom, #fff29c, #676b32);
   text-decoration: none;
 }
+
+.planetbox {
+	border: solid 2px darkblue;
+	display: inline-block;
+	height: 300px;
+	width: 300px;
+	margin: 20px;
+}
+
+
+.planetName {
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    position: absolute;
+    margin-top: 116px;
+    margin-left: 89px;
+}
+
+/*use the console to write your css in live time and then copy and paste to css file*/
+
+
