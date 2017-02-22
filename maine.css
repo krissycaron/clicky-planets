@@ -52,6 +52,17 @@ body {
     margin-left: 89px;
 }
 
+
+.planetImage {
+	height: 300px;
+	width: 300px;
+}
+
+.hidden {
+	display: none;
+}
+
+
 /*use the console to write your css in live time and then copy and paste to css file*/
 
 
