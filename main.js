@@ -78,8 +78,12 @@ function showMeTheName(event){
 		console.log("event worked", event);
 		console.log("unique ID", event.target.parentNode.id);
 		console.log("worked", event.target.previousSibling); 
+		event.target.previousSibling.classList.remove('hidden'); //burrows through the html tree and finds "hidden" and removes it
 	}
 }
+
+//extra challenge, 1) get words to go away
+// 2) get planets to disappear. 
 
 getPlanets.addEventListener("mouseenter", writeToDom); //hover with mouse to reveal
 
