@@ -5,7 +5,7 @@ var getPlanets = document.getElementById("showPlanets");
 
 var planetHolderDiv = document.getElementById("planetHolder");
 // console.log(getPLanetHolderDiv);  This prints to the console the div.
-
+var outputClear = document.getElementById("clear");
 // var planetBoxes = document.getElementByClassName('planetBox'); something wrong here
 
 var planets = [
@@ -72,6 +72,10 @@ function writeToDom (){
 	}
 }	
 
+function clearOutput() {
+ planetHolderDiv.innerHTML = ""; 
+}
+
 
 function showMeTheName(event){
 	if(event.target.className === 'planetImage'){ //selecting the specific target
@@ -86,7 +90,7 @@ function showMeTheName(event){
 // 2) get planets to disappear. 
 
 getPlanets.addEventListener("mouseenter", writeToDom); //hover with mouse to reveal
-
+outputClear.addEventListener("click", clearOutput);
 // console.log("planetBoxes", planetBoxes);
 // planetBoxes[0].addEventListener("click", showMeTheName); //event listeners start on page load
 
